@@ -5,7 +5,7 @@ import base64
 
 app = Flask(__name__)
 
-@app.route('/process', methods=['GET'])
+@app.route('/fluxus?url=', methods=['GET'])
 def process():
     # Get the HWID URL from query parameters
     hwid_url = request.args.get('url')
