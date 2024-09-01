@@ -5,7 +5,7 @@ import requests
 
 app = Flask(__name__)
 
-@app.route('/boost.ink', methods=['GET'])
+@app.route('/boost.ink?url=', methods=['GET'])
 def extract():
     # Get the URL from query parameters
     url = request.args.get('url')
